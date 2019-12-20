@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Ghibli</string>
+    <string name="people">People</string>
+    <string name="species">Species</string>
+    <string name="locations">Locations</string>
+    <string name="name">Name :</string>
+    <string name="title">Title :</string>
+    <string name="director">Director :</string>
+    <string name="producer">Producer :</string>
+    <string name="movienav">Movie</string>
+    <string name="peoplenav">People</string>
+    <string name="mapnav">Location</string>
+    <string name="gender">Gender :</string>
+    <string name="age">Age :</string>
+    <string name="eyes">Eyes :</string>
+    <string name="hair">Hair :</string>
+    <string name="climate">Climate :</string>
+    <string name="terrain">Terrain :</string>
+    <string name="swater">Surface Water</string>
+</resources>

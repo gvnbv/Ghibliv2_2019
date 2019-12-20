@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context="com.gauvain.ghibli.MainActivity">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+    android:id="@+id/navigation_bar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    app:menu="@menu/navigation_bar"
+    app:itemBackground="@color/colorPrimary"
+    app:itemIconTint="@color/white"
+    app:itemTextColor="@color/white" />
+
+    <fragment
+        android:id="@+id/display_movie_fragment"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:name="com.gauvain.ghibli.view.DisplayMovieFragment"
+        android:orientation="horizontal"
+        android:layout_above="@id/navigation_bar"
+        />
+
+    <fragment
+        android:id="@+id/display_people_fragment"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:name="com.gauvain.ghibli.view.DisplayPeopleFragment"
+        android:orientation="horizontal"
+        android:layout_above="@id/navigation_bar"
+        />
+
+    <fragment
+        android:id="@+id/display_location_fragment"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:name="com.gauvain.ghibli.view.DisplayLocationFragment"
+        android:orientation="horizontal"
+        android:layout_above="@id/navigation_bar"
+        />
+
+    <fragment
+        android:id="@+id/list_people_fragment"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:name="com.gauvain.ghibli.view.ListPeopleFragment"
+        android:orientation="horizontal"
+        android:layout_above="@id/navigation_bar"
+        />
+
+    <fragment
+        android:id="@+id/list_location_fragment"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:name="com.gauvain.ghibli.view.ListLocationFragment"
+        android:orientation="horizontal"
+        android:layout_above="@id/navigation_bar"
+        />
+
+    <fragment
+        android:id="@+id/list_movies_fragment"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:name="com.gauvain.ghibli.view.ListMoviesFragment"
+        android:orientation="horizontal"
+        android:layout_above="@id/navigation_bar"
+        />
+
+    <fragment
+        android:id="@+id/load_fragment"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:name="com.gauvain.ghibli.view.LoadFragment"
+        android:orientation="horizontal"
+        />
+
+
+</RelativeLayout>
